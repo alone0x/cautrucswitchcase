@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    input{
+        width: 300px;
+        height: 30px;
+    }
+    button{
+        position: absolute ;
+        left: 350px;
+        top: 20px;
+
+    }
+</style>
+<body>
+<input id="input">
+<button onclick="tinh()">tính số ngày</button><br>
+<label id="result"></label>
+<script>
+    function tinh() {
+        thang = parseInt(document.getElementById("input").value);
+
+        switch (thang) {
+            case 1:
+                document.getElementById("result").innerHTML = ("tháng" + thang + "có 31 ngày");
+                break;
+            case 2:
+                document.getElementById("result").innerHTML =("tháng" + thang + "có 28 hoặc 29 ngày");
+                break;
+            case  3:
+                document.getElementById("result").innerHTML =("tháng" + thang + "có 31 ngày");
+                break;
+            case 4 :
+                document.getElementById("result").innerHTML =("tháng" + thang + "có 30 ngày");
+                break;
+            case 5 :
+                document.write("tháng" + thang + "có 31 ngày");
+                break;
+            case 6 :
+                document.write("tháng" + thang + "có 30 ngày");
+                break;
+            case 7 :
+                document.write("tháng" + thang + "có 31 ngày");
+                break;
+            case  8 :
+                document.write("tháng" + thang + "có 31 ngày");
+                break;
+            case 9 :
+                document.write("tháng" + thang + "có 30 ngày");
+                break;
+            case  10 :
+                document.write("tháng" + thang + "có 31 ngày");
+                break;
+            case 11 :
+                document.write("tháng" + thang + "có 30 ngày");
+                break;
+            case 12 :
+                document.write("tháng" + thang + "có 31 ngày");
+
+        }
+    }
+</script>
+
+</body>
+</html>
